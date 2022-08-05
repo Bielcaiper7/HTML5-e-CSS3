@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>aula15</title>
+    <style>
+        td {
+            border: 1px solid #404040;
+            padding:10px;
+        }
+        td#escondido {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        table:hover td#escondido {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body style="color: #404040">
+<h1>Nessa aula:</h1>
+<p>Como criar tabelas em HTML5? Veremos nessa aula, como utilizar as tags TABLE, CAPTION, TR, TD e muitas outras usadas para criar tabelas em sites HTML.</p>
+
+<p>Cada linha da tabela em HTML será uma Table Row, ou TR. Cada célula de dados será uma Table Data, ou TD.</p>
+
+<p><b>Observação</b>: A partir do HTML5, os fechamentos das tags /TR e /TD são opcionais e podem ser omitidas.</p>
+
+<p>Utilizando CSS3, podemos utilizar alguns modificadores para formatar a tabela, usando BORDER para criar bordas sólidas para TABLE, TR e TD.</p>
+
+<p>O modificador BORDER-SPACING das CSS modifica o espaço entre as células de uma tabela.</p>
+
+<p>No HTML, podemos realizar ROWSPAN, que vai criar uma expansão de linha nas células.</p>
+
+<p>De maneira similar, utilizando COLSPAN, teremos uma expansão de coluna nas células de uma tabela HTML5.</p>
+<h2>Exemplo:</h2>
+<table style="border: 1px solid #404040;border-spacing: 0; background-color: #bdbdbd; color: black; text-align: center">
+    <caption>alimentos</caption>
+    <tr><td>vegetais</td><td>trigo, cevada, joio</td></tr>
+    <tr><td rowspan="2">legumes</td><td>repolho, cenoura, alface</td>
+    <tr><td>pepino, rúcula, salsinha</td></tr>
+    <tr><td>frutas</td><td>maçã, banana, pera, caju, uva, melancia, abacate</td></tr>
+    <tr><td>carnes</td><td>filé mignion, alcatra, maminha, fraldinha, picanha, agulha, bife</td></tr>
+    <tr><td id="escondido" colspan="2">E ESSA SÃO AS TABELAS</td></tr>
+</table>
+</body>
+</html>

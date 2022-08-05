@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>aula14</title>
+    <style>
+        @font-face {
+            font-family: computer;
+            src: url("projeto-glass-html5/_fonts/bubblegum-sans-regular.otf");
+        }
+    section {
+        display: block;
+        float: left;
+        width: 350px;
+        border-right: 1px #606060 solid;
+        margin-top: -20px;
+    }
+    aside {
+        display: block;
+        float: right;
+        width: 300px;
+        border-right: 1px #606060 double;
+        margin-top: -20px;
+        position: relative;
+        left: -750px;
+    }
+    h2 {
+        border-bottom: 1px #606060 solid;
+        padding-bottom: 15px;
+    }
+    </style>
+</head>
+<body>
+<h1 style="font-family: computer,sans-serif">Nessa aula:</h1>
+<h2>Como usar as tags SECTION, ASIDE e FOOTER. O HTML5 possui algumas tags que dão significado ao conteúdo da página.</h2>
+<section>
+    <p><h4>SECTION:</h4>Cria uma sessão que vai poder conter vários artigos (ARTICLE) ou objetos.</p>
+
+    <p><h4>ASIDE:</h4>São conteúdos periféricos, que estão diretamente relacionados ao conteúdo do artigo principal.</p>
+
+    <p><h4>FOOTER:</h4>É o rodapé da página ou do conteúdo específico.</p>
+</section>
+<aside>
+    <p>Para configurar essas tags e utilizar o posicionamento correto, utilizaremos o CSS3 com os modificadores DISPLAY: BLOCK e o FLOAT para gerar uma flutuação.</p>
+
+    <p>Caso seja necessário interromper a flutuação, utilizaremos o modificador CSS CLEAR:BOTH para eliminá-la.</p>
+</aside>
+</body>
+</html>

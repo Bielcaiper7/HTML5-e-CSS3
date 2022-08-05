@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>aula07</title>
+	<style>
+		nav.menu {
+			opacity: 0;
+			transition: opacity 1s;
+		}
+		nav.menu:hover {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+<h1>Nessa aula:</h1>
+
+<p>Existe a tag chamada &lt;nav&gt; que é navegação, onde se começa a usar as tag's para a criação de lista.</p>
+
+<p>Existe a tag &lt;ol&gt; = lista ordenada; &lt;ul&gt; = lista não ordenada e &lt;li&gt; = item da lista, tbm se pode criar listas aninhadas(sublistas).</p>
+
+<p>Tbm existem os tipos, que se usa com a tag &lt;type&gt;, que são '1','a'(A) e 'i'(I)</br>
+para as desordenadas são: 'circle', 'square' e 'disc'.</p>
+
+<p>No caso das listas ordenadas se pode usar a tag &lt;start&gt; que vc pode usar números como índice indicando aonde irá começar.</p>
+<h2>Exemplo:</h2>
+<nav class="menu" style="background-color: rgb(16, 8, 0); width: 30%; color: white; border: 5px solid white;box-shadow: 1px 1px 20px black;">
+		<h1 style="padding: 10px;">Menu restauranterrye</h1>
+		<ul type="square">
+			<li><h2>doces</h2></li>
+			<ul type="disc">
+				<li><h3>frios</h3></li>
+					<ul type="circle">
+						<li>Brigadeirão</li>
+						<li>bolo</li>
+						<li>brownie</li>
+						<li>refrigerante</li>
+						<li>chocolates em barra</li>
+					</ul>
+				<li><h3>quentes</h3></li>
+					<ul type="circle">
+						<li>chocolate quente</li>
+						<li>churro</li>
+						<li>crepe de nutela</li>
+						<li>brigadeiro de forno</li>
+						<li>suflê de chocolate</li>
+					</ul>
+			</ul>
+			<li><h2>salgados</h2></li>
+			<ul type="disc">
+				<li><h3>fast-food</h3></li>
+					<ul type="circle">
+						<li>hotdog</li>
+						<li>coxinha</li>
+						<li>pizza</li>
+						<li>escondidinho</li>
+						<li>quichê</li>
+						<li>pastel</li>
+						<li>esfiha</li>
+					</ul>
+				<li><h3>Comida</h3></li>
+					<ul type="circle">
+						<li>buffet</li>
+						<li>salpicão</li>
+						<li>torta fria</li>
+						<li>bife à milanesa</li>
+						<li>bife à parmegiana</li>
+						<li>strogonnoff</li>
+						<li>macarrão ao molho branco</li>
+					</ul>
+			</ul>
+		</ul>
+</nav>
+</body>
+</html>

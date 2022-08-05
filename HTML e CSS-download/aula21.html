@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aula21</title>
+    <style>
+        span p {
+            color: black;
+            background-color: #dddddd;
+            box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Nessa aula:</h1>
+<span>
+<p>Veja como criar formulários em HTML e conheça as tags novas para formulários no HTML5, como os tipos NUMBER, DATE e EMAIL. Essa será a primeira parte de três tutoriais sobre formulários HTML5.</p>
+
+<p>A tag FORM serve para criar um formulário, onde o usuário vai poder interagir com seu site e fornecer dados.</p>
+
+<p>A tag FIELDSET em HTML cria conjuntos de campos agrupados dentro de uma linha container que vai identificar cada uma das sessões.</p>
+
+<p>A tag LEGEND cria uma legenda para cada FIELDSET, um texto que fica sobre as linhas.</p>
+
+<p>A tag INPUT serve para criar a grande maioria dos campos de formulários em HTML5. Nessa aula, veremos alguns valores para o parâmetro TYPE:</p>
+
+<p>A tag INPUT com o parâmetro TYPE = “text” cria uma caixa de texto.</p>
+
+<p>O parâmetro SIZE indica a quantidade de caracteres exibidos simultaneamente em uma caixa de texto.</p>
+
+<p> parâmetro MAXLENGTH indica a quantidade de caracteres aceitos em uma caixa de texto. Entenda a diferença entre SIZE e MAXLENGTH.</p>
+
+<p>O parâmetro PLACEHOLDER configura um conteúdo informativo dentro de um objeto de formulário. Ao clicar sobre o objeto, o PLACEHOLDER desaparecerá.</p>
+
+<p>Para criar uma caixa de senha em um formulário HTML, utilizaremos a tag INPUT com TYPE = “password”</p>
+
+<p>Caixas de senha também suportam SIZE, MAXLENGTH e PLACEHOLDER.</p>
+
+<p>Para solicitar um e-mail. utilizaremos INPUT com TYPE = “email”, que é exclusivo da HTML5.</p>
+
+<p>Para criar opções a serem selecionadas na forma de botões de rádio, utilizaremos INPUT com parâmetro TYPE = “radio”. Para deixar uma opção previamente marcada, utilizamos o parâmetro CHECKED.</p>
+
+<p>OBS: Para objetos do tipo RADIO que fazem parte de um mesmo grupo, todos devem ter o mesmo NAME. Isso é muito importante, senão as duas opções ficam marcadas se selecionada, e não se pode desmarcar.</p>
+
+<p>Para criar palavras relacionadas a objetos de formulário, utilizamos a tag LABEL com um ID. Para criar a relação entre objetos e LABEL, utilizamos o parâmetro FOR do objeto.</p>
+
+<p>A tag INPUT com parâmetro TYPE = “date”, cria uma caixa de seleção de data, com um calendário (depende do navegador utilizado).</p>
+
+<p>Para permitir a entrada de valores numéricos, utilizamos INPUT com parâmetro TYPE=”number”. Nesse caso, os parâmetros MIN e MAX definem os valores mínimo e máximo para caixas desse tipo.</p>
+</span>
+<h2>Exemplo:</h2>
+<form>
+    <fieldset>
+        <legend id="cadastro">Cadastro</legend>
+        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="50" placeholder="Nome Completo."></p>
+        <p><label for="cIdade">Idade:</label><input type="number" name="tIdade" id="cIdade" size="4" min="0" max="1120" placeholder="Idade."></p>
+        <p><label for="cMail">G-mail:</label><input type="email" name="tMail" id="cMail" size="20" maxlength="50" placeholder="Digite seu G-mail."></p>
+        <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="20" maxlength="20" placeholder="Crie uma senha dificil."></p>
+    </fieldset>
+</form>
+</body>
+</html>
